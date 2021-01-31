@@ -2,7 +2,7 @@ import pytest
 import yaml
 def get_datas():
     # 打开文件
-    with open("./data.yml") as f:
+    with open("../homework_zfh/data.yml") as f:
         datas = yaml.safe_load(f)
         print(datas)
         # 获取文件中key为datas的数据

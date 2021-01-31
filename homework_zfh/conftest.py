@@ -5,7 +5,7 @@ import pytest
 # 通过os.path.dirname 获取当前文件所在路径
 
 
-from homework_zfh.calculator import Calculator
+from homework_zfh.test_calculator import Calculator
 
 yaml_file_path = os.path.dirname(__file__) + r"\data.yml"
 print(yaml_file_path)
@@ -51,7 +51,7 @@ def div_datas(request):
 
 
 
-@pytest.fixture(scope="module")
+@pytest.fixture(scope="class")
 def get_cal():
     # 获取计算器实例
     cal = Calculator()
